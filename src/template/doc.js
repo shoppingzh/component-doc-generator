@@ -17,7 +17,7 @@ export default template(`
 
 名称 | 说明 | 类型 | 是否必须 | 可选值 | 默认值
 -- | -- | -- | -- | -- | --
-<% _.forEach(props, function(item) { %> <%= item.name %> | <%= item.description %> | <%= item.type %> | <%= item.required ? '是' : '否' %> | <%= item.optionValue %> | <%= item.defaultValue %><% }); %>
+<% _.forEach(props, function(item) { %> <%= item.name %> | <%= item.description %> | <%= item.type %> | <%= item.required ? '是' : '否' %> | <%= item.optionValue %> | <%= item.defaultValue %>\n<% }); %>
 
 
 
@@ -25,14 +25,14 @@ export default template(`
 
 名称 | 说明 | 参数 | 返回值
 -- | -- | -- | --
-<% _.forEach(methods, function(item) { %><%= item.name %> | <%= item.description %> | <%= item.args %> | <%= item.returnValue %><% }); %>
+<% _.forEach(methods, function(item) { %><%= item.name %> | <%= item.description %> | <%= item.args %> | <%= item.returnValue %>\n<% }); %>
 
 
 ## 事件
 
 名称 | 说明 | 回调参数
 -- | -- | --
-<% _.forEach(events, function(item) { %><%= item.name %> | <%= item.description %> | <%= item.args %><% }); %>
+<% _.forEach(events, function(item) { %><%= item.name %> | <%= item.description %> | <%= item.args %>\n<% }); %>
 
 
 
@@ -40,7 +40,7 @@ export default template(`
 
 名称 | 说明 | 参数
 -- | -- | --
-<% _.forEach(slots, function(item) { %><%= item.name %> | <%= item.description %> | <%= item.args %><% }); %>
+<% _.forEach(slots, function(item) { %><%= item.name %> | <%= item.description %> | <%= item.args %>\n<% }); %>
 
 
 

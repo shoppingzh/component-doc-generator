@@ -3,7 +3,7 @@
     <div>
       <div class="title">组件文档生成器</div>
       <el-row type="flex">
-        <el-col :lg="{ span: 18, offset: 3 }" :md="{ span: 20, offset: 2 }" :sm="{ span: 24, offset: 0 }">
+        <el-col :span="24">
           <Generator @update="handleGenerate" />
         </el-col>
       </el-row>

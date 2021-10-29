@@ -35,7 +35,7 @@
               <type-select v-model="row.type" />
             </template>
           </el-table-column>
-          <el-table-column label="是否必须">
+          <el-table-column label="是否必须" width="120px">
             <template #default="{ row }">
               <el-select v-model="row.required">
                 <el-option label="是" :value="true" />
@@ -64,7 +64,7 @@
       <el-form-item label="方法">
         <el-table
           :data="form.methods">
-          <el-table-column label="名称">
+          <el-table-column label="名称" width="200">
             <template #default="{ row }">
               <el-input v-model="row.name" />
             </template>
